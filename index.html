@@ -253,7 +253,7 @@
         .about-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            gap: 60px;
             align-items: center;
         }
 
@@ -381,7 +381,7 @@
 
         .map-embed {
             width: 100%;
-            height: 450px;
+            height: 100%;
             border: 3px solid var(--border-color);
         }
 
@@ -725,16 +725,8 @@
                 <h3>Side Window Replacement</h3>
                 <p>Quick and professional replacement of side windows, door glass, and quarter panels for all vehicles.</p>
             </div>
-            <div class="service-card">
-                <i class="fas fa-car-side"></i>
-                <h3>Back Glass Replacement</h3>
-                <p>Complete rear window replacement services with proper sealing and weatherproofing for lasting protection.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Insurance Claims</h3>
-                <p>We work directly with your insurance company to make the claims process smooth and hassle-free.</p>
-            </div>
+         
+           
         </div>
     </section>
 
@@ -750,11 +742,11 @@
             </div>
             <div class="stats-grid">
                 <div class="stat-box">
-                    <div class="number">5★</div>
+                    <div class="number">4.8★</div>
                     <div class="label">Customer Rating</div>
                 </div>
                 <div class="stat-box">
-                    <div class="number">100%</div>
+                    <div class="number">96%</div>
                     <div class="label">Quality Guarantee</div>
                 </div>
                 <div class="stat-box">
@@ -941,9 +933,7 @@
                 <p>Windshield Replacement</p>
                 <p>Glass Repair</p>
                 <p>Side Window Replacement</p>
-                <p>Back Glass Replacement</p>
                 <p>Diesel Vehicles</p>
-                <p>Insurance Claims</p>
             </div>
             <div class="footer-section">
                 <h3>Connect With Us</h3>
@@ -953,7 +943,6 @@
                     <a href="https://www.google.com/maps/place/Impact+Auto+And+Diesel/@40.7024637,-111.8538869,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f454a15c09db:0x129f30802392c316!8m2!3d40.7024637!4d-111.8513066!16s%2Fg%2F11bytsm1mg?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">
                         <i class="fas fa-map-marker-alt"></i>
                     </a>
-                    <a href="https://github.com/JamesBrownR/Impact-Auto-And-Diesel/new/main" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -971,13 +960,247 @@
         // ===== REVIEWS DATA =====
         // Add your reviews to this array. Each review should have: name, rating (1-5), and body (text or empty string "")
         const reviews = [
-            { name: "Customer 1", rating: 5, body: "" },
-            { name: "Customer 2", rating: 5, body: "" },
-            { name: "Customer 3", rating: 5, body: "" },
-            { name: "Customer 4", rating: 5, body: "" },
-            { name: "Customer 5", rating: 5, body: "" },
-            { name: "Customer 6", rating: 5, body: "" }
-        ];
+    {
+        "name": "Mark Ahlijanian",
+        "rating": 5,
+        "body": "Jeff and his team at Impact Auto are awesome. I own a small tree business and they are our only stop with fleet repairs. Jeff is extremely knowledgeable diesel engines and has fixed problems that other diesel mechanics have not been able to diagnose or fix properly. I highly recommend take your vehicles here!"
+    },
+    {
+        "name": "Rashid Mak",
+        "rating": 5,
+        "body": "Jeff listened attentively to my issue with my 2012 Volkswagen Touareg diesel and the cylinder six insufficient contribution code. He reassured me it might be a minor problem, suggested a few things to test, and was kind, professional, and … More"
+    },
+    {
+        "name": "Oliver Bradstreet",
+        "rating": 5,
+        "body": "They had outstanding service, Jeff solved a issue with my Duramax noone else could and was more than fair with me. Impact is my \"go to\" for my diesel. More"
+    },
+    {
+        "name": "Alice Dughi",
+        "rating": 5,
+        "body": "Jeff is a stand up human. Honest and cares about taking care of his clients. I am grateful that I got my ‘96 F250 and ‘98 Lance slide in camper in working order for living on the road at his shop. He was consistently patient and … More"
+    },
+    {
+        "name": "Fred Proby",
+        "rating": 5,
+        "body": "Jeff is one of those old-school mechanics who thoroughly diagnose the problem, rather than merely slap on a new part and hope it works. We were travelling back to Montana and limped into SLC with serious overheating problems on our 2005 … More"
+    },
+    {
+        "name": "Aaron Sattler",
+        "rating": 5,
+        "body": "Honest. Competent. Treats you like a human first. Was able to quickly diagnose and fix a problem for reasonable $ that the … More"
+    },
+    {
+        "name": "John Vande Merwe",
+        "rating": 5,
+        "body": "Jeff is the only mechanic I trust more than myself. Thanks again for breathing new life into my 7.3."
+    },
+    {
+        "name": "Bryant Rouse",
+        "rating": 5,
+        "body": "I appreciate Jeff and his guys getting my truck done in a timely manner. He replaced a turbo on my ram 2500. His communication was clear, professional and he is highly knowledgeable."
+    },
+    {
+        "name": "ivy johnson",
+        "rating": 5,
+        "body": "jeff gave amazing customer service! they were quick and efficient and will definitely be recommending to friends and family!"
+    },
+    {
+        "name": "Axel Corke",
+        "rating": 5,
+        "body": "Jeff is seriously the best. I got told I needed cam phasers. He gave me an awesome quote so I brought my truck to him. The second I pulled up he checked out and said it was my … More"
+    },
+    {
+        "name": "Steve Christensen",
+        "rating": 5,
+        "body": "We've been taking our 97 Dodge 2500 Cummins to Impact Auto for about a year now. As with any older truck, components/parts begin to fail. Jeff and Cody are top notch mechanics and go above and beyond to fix things right. Great guys. Great work. Go there!"
+    },
+    {
+        "name": "Janet Raineri",
+        "rating": 5,
+        "body": "Finding a seasoned, reliable honest down to earth mechanic now a days is far and few in between.I took my 1997 Betty the Buick Lasabre to Jeff at Impact she was riding rough, spurting … More"
+    },
+    {
+        "name": "Andrew Kelleher",
+        "rating": 5,
+        "body": "Jeff and his team were able to squeeze us in on a busy Tuesday to diagnose a vibration we were having at cruising speeds. … More"
+    },
+    {
+        "name": "Dowey Boy",
+        "rating": 5,
+        "body": "Took my Cummins 2500 diesel here. Got it fixed for an honest and affordable price. He didnt try to add any unnecessary charges like other repair shops to. Jeff is very knowledgeable about the dodge diesel truck. Honest shop. Will definitely take my truck back again."
+    },
+    {
+        "name": "Chad Mullins",
+        "rating": 5,
+        "body": "Great shop -- great people and reasonable. The catalytic converter was stolen on my motorhome. The only FORD truck dealer who will work on motorhomes was so backed up that they could not get to it for months. Jeff got the part overnighted from Denver and had me back on the road in 48 hours. More"
+    },
+    {
+        "name": "DANIELLE LEBLANC",
+        "rating": 5,
+        "body": "Jeff knows his stuff. It's amazing hearing his wisdom all day and learning by his side. We are running the best shop we can while staying small to provide you with better customer service than the big guys. Let us make an IMPACT on how you view auto repair! Come see us and let us get you rollin!"
+    },
+    {
+        "name": "Dude Dudeington",
+        "rating": 5,
+        "body": "I had the pleasure of showing Jeff how to change a tail light when he was in Jr. high. Little would I know he would become the amazing and knowledgeable mechanic he is today. Impact is one of the few last small shops that do things right the first time and go above and beyond to make sure your vehicle is repaired correctly."
+    },
+    {
+        "name": "Justin Beasley",
+        "rating": 5,
+        "body": "Jeff does a great job and knows his diesels well!"
+    },
+    {
+        "name": "Brandon Allen",
+        "rating": 5,
+        "body": "Jeff has an amazing eye and ear for detail. My vehicles run better now then they ever have. I am greatful I have found an honest mechanic in Jeff. Thanks!!"
+    },
+    {
+        "name": "Greg Biles",
+        "rating": 5,
+        "body": "My Chevy Duramax started leaking oil which at the rear main seal. We were staying at the KOA and only had one vehicle so we appreciate how accommodating they were with our urgency and schedules. I waited 3 months to write this review to … More"
+    },
+    {
+        "name": "Justin J",
+        "rating": 5,
+        "body": "I have a powerstroke 6.0 that's a difficult engine to diagnose problems. First mechanic I took it to couldn't figure out out the issue and I had gone through a bunch of diagnostic tests myself with no luck in figuring it out. They diagnosed … More"
+    },
+    {
+        "name": "Goodwin Mafia",
+        "rating": 5,
+        "body": "If your looking for a great shop Jeff at impact auto is the man, he is a very intelligent technician and makes sure you are completely satisfied with your repairs. He will go out of the way to help out anybody, I recommend him for all of your automotive repairs!!!"
+    },
+    {
+        "name": "Chris Ripplinger",
+        "rating": 5,
+        "body": "The two bad reviews are for a shop in Idaho. Jeff knows his stuff and they only charge $115/hr. whereas the other shops charge $135+. … More"
+    },
+    {
+        "name": "Jake Larson",
+        "rating": 5,
+        "body": "Jeff is a very knowledgeable mechanic. He is the only one I trust to work on my personal vehicles and work trucks. He is trustworthy and fair on prices."
+    },
+    {
+        "name": "G D Beckett",
+        "rating": 5,
+        "body": "These guys quickly diagnosed & fixed what my local shop could not. They know their stuff. If you are looking for a good diesel mechanic, look no further. They saved the first camping trip of spring for me. More"
+    },
+    {
+        "name": "Anthony Mutter",
+        "rating": 5,
+        "body": "I went here without notice on a Friday afternoon and the owner looked at my vehicle and told me a very low cost, nearly $400 less than the last bid I received. Then he had to wait for the part to come in and he went in on a Saturday when the shop is normally closed and fixed my vehicle. I strongly recommend this place to everyone!!!"
+    },
+    {
+        "name": "MillsLeds Wabbit LSX",
+        "rating": 5,
+        "body": "Best Mechanic in Salt Lake City best customer service in Utah no messing around or guessing what's wrong with the vehicle brought in my dodge ram 3500 with a lot of problem I'm am happy to say that I brought the truck here truck is running like it was brand new Jeff and Justin best of the best in Utah"
+    },
+    {
+        "name": "Anthony Hong",
+        "rating": 5,
+        "body": "Definitely a 5 star auto mechanic!! Thanks for saving the day Jeff! Impact Auto does great work and finding a fair diesel mechanic isn’t easy these days. Thanks again!!!"
+    },
+    {
+        "name": "cory peterson",
+        "rating": 5,
+        "body": "I've taken my truck to these guys for a bunch of different stuff from suspension to an engine replacement and they always crank it out with fast and quality work. 10/10 would recommend."
+    },
+    {
+        "name": "Andy P",
+        "rating": 5,
+        "body": "I've heard really good things about this shop and so far I'm impressed and appreciate their honesty and competitive prices. I won't be looking for a good mechanic for a while, I just found an entire shop full!"
+    },
+    {
+        "name": "Aleck Wright",
+        "rating": 5,
+        "body": "Guy running things is great. Really easy to talk to salt of the Earth kinda guy that helped me figure out an easy and inexpensive fix for the problem I had. More"
+    },
+    {
+        "name": "Carlo Sanchez",
+        "rating": 5,
+        "body": "ABSOLUTELY GREAT Service!! All othe places booked two weeks out and he will get things done in only a couole days, less cost, and Great workmanship!!"
+    },
+    {
+        "name": "John Ivester",
+        "rating": 5,
+        "body": "If you want it done right and you don’t want all sorts of other things added on go see impact auto. They’ve been doing good work at a fair price for decades."
+    },
+    {
+        "name": "Jeanne Sewell",
+        "rating": 5,
+        "body": "I actively take my granddaughter to the Dojo on the same parking lot every Wednesday and Thursday."
+    },
+    {
+        "name": "Chris Hofer",
+        "rating": 5,
+        "body": "Jeff and Cody are great people that will treat you right."
+    },
+    {
+        "name": "Lmn 8r",
+        "rating": 5,
+        "body": "Friendly and knowledgeable! Thanks guys!!"
+    },
+    {
+        "name": "George Miff",
+        "rating": 5,
+        "body": "Great service"
+    },
+    {
+        "name": "Juan Manuel Bonilla Rodriguez",
+        "rating": 5,
+        "body": "Very good quality of service and the staff is always very happy Translated by Google ・ See original (Spanish)"
+    },
+    {
+        "name": "Steven Sroczynski",
+        "rating": 5,
+        "body": "Positive Punctuality, Professionalism, Value… More"
+    },
+    {
+        "name": "Tracy Rammell",
+        "rating": 5,
+        "body": ""
+    },
+    {
+        "name": "Angela Larson",
+        "rating": 5,
+        "body": ""
+    },
+    {
+        "name": "NekroVon7thDivision",
+        "rating": 5,
+        "body": ""
+    },
+    {
+        "name": "Justin Wilson",
+        "rating": 5,
+        "body": ""
+    },
+    {
+        "name": "Danielle Poirier",
+        "rating": 4,
+        "body": "Jeff and Danielle are great people! Unfortunately the repairs for my ambulance camper were too expensive for me since the Frankenstein- engine build would require an engine pull to repair. but they were super helpful in trying to find other … More"
+    },
+    {
+        "name": "Donald Schmidt",
+        "rating": 4,
+        "body": "Jeff is a wonderful mechanic and a good man he is able to fabricate pieces that might be missing"
+    },
+    {
+        "name": "Brandie Wilson",
+        "rating": 3,
+        "body": ""
+    },
+    {
+        "name": "Bill Cannon",
+        "rating": 1,
+        "body": "Crooked, shady horrible mechanic! do not trust them! honestly i dont think he knows tje differencebetween gas and diesel engines. to consider him an idiot is a compliment."
+    },
+    {
+        "name": "Ford Karen",
+        "rating": 1,
+        "body": "horrible!!! so called mechanic is a complete idiot. do not recommend at all. CROOKS!"
+    }
+];
 
         // ===== REVIEWS DISPLAY LOGIC =====
         const reviewsPerPage = 6;
