@@ -14,14 +14,14 @@
         }
 
         :root {
-            --primary-color: #1a4d8f;
-            --secondary-color: #2a5fa8;
-            --accent-color: #ff6b35;
-            --dark-bg: #0f1419;
-            --light-bg: #f8f9fa;
-            --text-dark: #1a1a1a;
-            --text-light: #ffffff;
-            --border-color: #e0e0e0;
+            --primary-color: #1a2e44;
+            --secondary-color: #2f4562;
+            --accent-color: #a91b0d;
+            --dark-bg: #1c2526;
+            --light-bg: #e8ecef;
+            --text-dark: #2c2c2c;
+            --text-light: #f8f9fa;
+            --border-color: #d1d5db;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
@@ -128,7 +128,7 @@
         .hero p {
             font-size: clamp(1.1rem, 3vw, 1.5rem);
             margin-bottom: 40px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1104px 2px rgba(0, 0, 0, 0.3);
         }
 
         .cta-buttons {
@@ -156,7 +156,7 @@
         }
 
         .btn-primary:hover {
-            background: #e55a2a;
+            background: #8b160a;
             transform: translateY(-2px);
             box-shadow: var(--shadow-hover);
         }
@@ -241,7 +241,7 @@
         }
 
         .service-card p {
-            color: #666;
+            color: #4b5563;
             line-height: 1.8;
         }
 
@@ -253,8 +253,10 @@
         .about-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 100px;
+            gap: 10px;
             align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .about-text h3 {
@@ -266,7 +268,7 @@
         .about-text p {
             font-size: 1.1rem;
             line-height: 1.8;
-            color: #444;
+            color: #4b5563;
             margin-bottom: 15px;
         }
 
@@ -292,7 +294,7 @@
 
         .stat-box .label {
             font-size: 1rem;
-            color: #666;
+            color: #4b5563;
             margin-top: 10px;
         }
 
@@ -330,12 +332,12 @@
         }
 
         .stars {
-            color: #ffa500;
+            color: #d97706;
             font-size: 1.1rem;
         }
 
         .review-body {
-            color: #555;
+            color: #4b5563;
             line-height: 1.7;
             font-style: italic;
         }
@@ -423,7 +425,7 @@
         }
 
         .info-item .details p {
-            color: #666;
+            color: #4b5563;
             line-height: 1.6;
         }
 
@@ -442,7 +444,7 @@
         }
 
         .hours-list .time {
-            color: #666;
+            color: #4b5563;
         }
 
         .directions-btn {
@@ -521,7 +523,7 @@
         }
 
         .submit-btn:hover {
-            background: #e55a2a;
+            background: #8b160a;
         }
 
         .contact-info-box {
@@ -536,12 +538,7 @@
         }
 
         .contact-item {
-            display: flex;
-            align-items: start;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
+ Upper: 0px;
         .contact-item i {
             font-size: 1.5rem;
             margin-top: 3px;
@@ -657,8 +654,8 @@
 
         /* Success Message */
         .success-message {
-            background: #4caf50;
-            color: white;
+            background: #2f855a;
+            color: var(--text-light);
             padding: 15px;
             border-radius: 4px;
             margin-bottom: 20px;
@@ -725,8 +722,6 @@
                 <h3>Side Window Replacement</h3>
                 <p>Quick and professional replacement of side windows, door glass, and quarter panels for all vehicles.</p>
             </div>
-         
-           
         </div>
     </section>
 
@@ -882,472 +877,473 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-clock"></i>
-                    <div class="details">
-                        <p><strong>Hours:</strong><br>
-                        Monday - Friday: 8 AM - 6 PM<br>
-                        Saturday - Sunday: Closed</p>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="details">
+                            <p><strong>Hours:</strong><br>
+                            Monday - Friday: 8 AM - 6 PM<br>
+                            Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="details">
+                            <p><strong>Insurance:</strong><br>
+                            We work with all major insurance companies</p>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <div class="details">
-                        <p><strong>Insurance:</strong><br>
-                        We work with all major insurance companies</p>
+            </div>
+
+            <!-- Payment Section (Square) -->
+            <section class="section payment-section" id="payment">
+                <h2 class="section-title">Secure Payment</h2>
+                <div id="payment-form">
+                    <h3 style="color: var(--primary-color); margin-bottom: 20px;">Pay Online</h3>
+                    <div id="card-container"></div>
+                    <button id="card-button" class="btn btn-primary" style="width: 100%;">Pay Now</button>
+                </div>
+                <p style="text-align: center; margin-top: 20px; color: #4b5563;">
+                    <i class="fas fa-lock"></i> Secure payment powered by Square
+                </p>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Impact Auto And Diesel Glass</h3>
+                        <p>Professional auto glass repair and replacement services for all vehicles in Millcreek, Utah.</p>
+                        <p style="margin-top: 15px;"><strong>Owner:</strong> Jeff</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="#services">Services</a></p>
+                        <p><a href="#about">About Us</a></p>
+                        <p><a href="#reviews">Reviews</a></p>
+                        <p><a href="#location">Location</a></p>
+                        <p><a href="#contact">Contact</a></p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <p>Windshield Replacement</p>
+                        <p>Glass Repair</p>
+                        <p>Side Window Replacement</p>
+                        <p>Diesel Vehicles</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+13855493648">(385) 549-3648</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> 3161 Highland Dr., Millcreek, UT 84106</p>
+                        <div class="social-links">
+                            <a href="https://www.google.com/maps/place/Impact+Auto+And+Diesel/@40.7024637,-111.8538869,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f454a15c09db:0x129f30802392c316!8m2!3d40.7024637!4d-111.8513066!16s%2Fg%2F11bytsm1mg?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Payment Section (Square) -->
-    <section class="section payment-section" id="payment">
-        <h2 class="section-title">Secure Payment</h2>
-        <div id="payment-form">
-            <h3 style="color: var(--primary-color); margin-bottom: 20px;">Pay Online</h3>
-            <div id="card-container"></div>
-            <button id="card-button" class="btn btn-primary" style="width: 100%;">Pay Now</button>
-        </div>
-        <p style="text-align: center; margin-top: 20px; color: #666;">
-            <i class="fas fa-lock"></i> Secure payment powered by Square
-        </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Impact Auto And Diesel Glass</h3>
-                <p>Professional auto glass repair and replacement services for all vehicles in Millcreek, Utah.</p>
-                <p style="margin-top: 15px;"><strong>Owner:</strong> Jeff</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <p><a href="#services">Services</a></p>
-                <p><a href="#about">About Us</a></p>
-                <p><a href="#reviews">Reviews</a></p>
-                <p><a href="#location">Location</a></p>
-                <p><a href="#contact">Contact</a></p>
-            </div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <p>Windshield Replacement</p>
-                <p>Glass Repair</p>
-                <p>Side Window Replacement</p>
-                <p>Diesel Vehicles</p>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <p><i class="fas fa-phone"></i> <a href="tel:+13855493648">(385) 549-3648</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> 3161 Highland Dr., Millcreek, UT 84106</p>
-                <div class="social-links">
-                    <a href="https://www.google.com/maps/place/Impact+Auto+And+Diesel/@40.7024637,-111.8538869,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f454a15c09db:0x129f30802392c316!8m2!3d40.7024637!4d-111.8513066!16s%2Fg%2F11bytsm1mg?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </a>
-                        <i class="fab fa-github"></i>
-                    </a>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Impact Auto And Diesel Glass. All rights reserved. | Professional Auto Glass Services in Millcreek, UT</p>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Impact Auto And Diesel Glass. All rights reserved. | Professional Auto Glass Services in Millcreek, UT</p>
-        </div>
-    </footer>
+            </footer>
 
-    <!-- Square Payment SDK -->
-    <script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
-    
-    <script>
-        // ===== REVIEWS DATA =====
-        // Add your reviews to this array. Each review should have: name, rating (1-5), and body (text or empty string "")
-        const reviews = [
-    {
-        "name": "Mark Ahlijanian",
-        "rating": 5,
-        "body": "Jeff and his team at Impact Auto are awesome. I own a small tree business and they are our only stop with fleet repairs. Jeff is extremely knowledgeable diesel engines and has fixed problems that other diesel mechanics have not been able to diagnose or fix properly. I highly recommend take your vehicles here!"
-    },
-    {
-        "name": "Rashid Mak",
-        "rating": 5,
-        "body": "Jeff listened attentively to my issue with my 2012 Volkswagen Touareg diesel and the cylinder six insufficient contribution code. He reassured me it might be a minor problem, suggested a few things to test, and was kind, professional, and … More"
-    },
-    {
-        "name": "Oliver Bradstreet",
-        "rating": 5,
-        "body": "They had outstanding service, Jeff solved a issue with my Duramax noone else could and was more than fair with me. Impact is my \"go to\" for my diesel. More"
-    },
-    {
-        "name": "Alice Dughi",
-        "rating": 5,
-        "body": "Jeff is a stand up human. Honest and cares about taking care of his clients. I am grateful that I got my ‘96 F250 and ‘98 Lance slide in camper in working order for living on the road at his shop. He was consistently patient and … More"
-    },
-    {
-        "name": "Fred Proby",
-        "rating": 5,
-        "body": "Jeff is one of those old-school mechanics who thoroughly diagnose the problem, rather than merely slap on a new part and hope it works. We were travelling back to Montana and limped into SLC with serious overheating problems on our 2005 … More"
-    },
-    {
-        "name": "Aaron Sattler",
-        "rating": 5,
-        "body": "Honest. Competent. Treats you like a human first. Was able to quickly diagnose and fix a problem for reasonable $ that the … More"
-    },
-    {
-        "name": "John Vande Merwe",
-        "rating": 5,
-        "body": "Jeff is the only mechanic I trust more than myself. Thanks again for breathing new life into my 7.3."
-    },
-    {
-        "name": "Bryant Rouse",
-        "rating": 5,
-        "body": "I appreciate Jeff and his guys getting my truck done in a timely manner. He replaced a turbo on my ram 2500. His communication was clear, professional and he is highly knowledgeable."
-    },
-    {
-        "name": "ivy johnson",
-        "rating": 5,
-        "body": "jeff gave amazing customer service! they were quick and efficient and will definitely be recommending to friends and family!"
-    },
-    {
-        "name": "Axel Corke",
-        "rating": 5,
-        "body": "Jeff is seriously the best. I got told I needed cam phasers. He gave me an awesome quote so I brought my truck to him. The second I pulled up he checked out and said it was my … More"
-    },
-    {
-        "name": "Steve Christensen",
-        "rating": 5,
-        "body": "We've been taking our 97 Dodge 2500 Cummins to Impact Auto for about a year now. As with any older truck, components/parts begin to fail. Jeff and Cody are top notch mechanics and go above and beyond to fix things right. Great guys. Great work. Go there!"
-    },
-    {
-        "name": "Janet Raineri",
-        "rating": 5,
-        "body": "Finding a seasoned, reliable honest down to earth mechanic now a days is far and few in between.I took my 1997 Betty the Buick Lasabre to Jeff at Impact she was riding rough, spurting … More"
-    },
-    {
-        "name": "Andrew Kelleher",
-        "rating": 5,
-        "body": "Jeff and his team were able to squeeze us in on a busy Tuesday to diagnose a vibration we were having at cruising speeds. … More"
-    },
-    {
-        "name": "Dowey Boy",
-        "rating": 5,
-        "body": "Took my Cummins 2500 diesel here. Got it fixed for an honest and affordable price. He didnt try to add any unnecessary charges like other repair shops to. Jeff is very knowledgeable about the dodge diesel truck. Honest shop. Will definitely take my truck back again."
-    },
-    {
-        "name": "Chad Mullins",
-        "rating": 5,
-        "body": "Great shop -- great people and reasonable. The catalytic converter was stolen on my motorhome. The only FORD truck dealer who will work on motorhomes was so backed up that they could not get to it for months. Jeff got the part overnighted from Denver and had me back on the road in 48 hours. More"
-    },
-    {
-        "name": "DANIELLE LEBLANC",
-        "rating": 5,
-        "body": "Jeff knows his stuff. It's amazing hearing his wisdom all day and learning by his side. We are running the best shop we can while staying small to provide you with better customer service than the big guys. Let us make an IMPACT on how you view auto repair! Come see us and let us get you rollin!"
-    },
-    {
-        "name": "Dude Dudeington",
-        "rating": 5,
-        "body": "I had the pleasure of showing Jeff how to change a tail light when he was in Jr. high. Little would I know he would become the amazing and knowledgeable mechanic he is today. Impact is one of the few last small shops that do things right the first time and go above and beyond to make sure your vehicle is repaired correctly."
-    },
-    {
-        "name": "Justin Beasley",
-        "rating": 5,
-        "body": "Jeff does a great job and knows his diesels well!"
-    },
-    {
-        "name": "Brandon Allen",
-        "rating": 5,
-        "body": "Jeff has an amazing eye and ear for detail. My vehicles run better now then they ever have. I am greatful I have found an honest mechanic in Jeff. Thanks!!"
-    },
-    {
-        "name": "Greg Biles",
-        "rating": 5,
-        "body": "My Chevy Duramax started leaking oil which at the rear main seal. We were staying at the KOA and only had one vehicle so we appreciate how accommodating they were with our urgency and schedules. I waited 3 months to write this review to … More"
-    },
-    {
-        "name": "Justin J",
-        "rating": 5,
-        "body": "I have a powerstroke 6.0 that's a difficult engine to diagnose problems. First mechanic I took it to couldn't figure out out the issue and I had gone through a bunch of diagnostic tests myself with no luck in figuring it out. They diagnosed … More"
-    },
-    {
-        "name": "Goodwin Mafia",
-        "rating": 5,
-        "body": "If your looking for a great shop Jeff at impact auto is the man, he is a very intelligent technician and makes sure you are completely satisfied with your repairs. He will go out of the way to help out anybody, I recommend him for all of your automotive repairs!!!"
-    },
-    {
-        "name": "Chris Ripplinger",
-        "rating": 5,
-        "body": "The two bad reviews are for a shop in Idaho. Jeff knows his stuff and they only charge $115/hr. whereas the other shops charge $135+. … More"
-    },
-    {
-        "name": "Jake Larson",
-        "rating": 5,
-        "body": "Jeff is a very knowledgeable mechanic. He is the only one I trust to work on my personal vehicles and work trucks. He is trustworthy and fair on prices."
-    },
-    {
-        "name": "G D Beckett",
-        "rating": 5,
-        "body": "These guys quickly diagnosed & fixed what my local shop could not. They know their stuff. If you are looking for a good diesel mechanic, look no further. They saved the first camping trip of spring for me. More"
-    },
-    {
-        "name": "Anthony Mutter",
-        "rating": 5,
-        "body": "I went here without notice on a Friday afternoon and the owner looked at my vehicle and told me a very low cost, nearly $400 less than the last bid I received. Then he had to wait for the part to come in and he went in on a Saturday when the shop is normally closed and fixed my vehicle. I strongly recommend this place to everyone!!!"
-    },
-    {
-        "name": "MillsLeds Wabbit LSX",
-        "rating": 5,
-        "body": "Best Mechanic in Salt Lake City best customer service in Utah no messing around or guessing what's wrong with the vehicle brought in my dodge ram 3500 with a lot of problem I'm am happy to say that I brought the truck here truck is running like it was brand new Jeff and Justin best of the best in Utah"
-    },
-    {
-        "name": "Anthony Hong",
-        "rating": 5,
-        "body": "Definitely a 5 star auto mechanic!! Thanks for saving the day Jeff! Impact Auto does great work and finding a fair diesel mechanic isn’t easy these days. Thanks again!!!"
-    },
-    {
-        "name": "cory peterson",
-        "rating": 5,
-        "body": "I've taken my truck to these guys for a bunch of different stuff from suspension to an engine replacement and they always crank it out with fast and quality work. 10/10 would recommend."
-    },
-    {
-        "name": "Andy P",
-        "rating": 5,
-        "body": "I've heard really good things about this shop and so far I'm impressed and appreciate their honesty and competitive prices. I won't be looking for a good mechanic for a while, I just found an entire shop full!"
-    },
-    {
-        "name": "Aleck Wright",
-        "rating": 5,
-        "body": "Guy running things is great. Really easy to talk to salt of the Earth kinda guy that helped me figure out an easy and inexpensive fix for the problem I had. More"
-    },
-    {
-        "name": "Carlo Sanchez",
-        "rating": 5,
-        "body": "ABSOLUTELY GREAT Service!! All othe places booked two weeks out and he will get things done in only a couole days, less cost, and Great workmanship!!"
-    },
-    {
-        "name": "John Ivester",
-        "rating": 5,
-        "body": "If you want it done right and you don’t want all sorts of other things added on go see impact auto. They’ve been doing good work at a fair price for decades."
-    },
-    {
-        "name": "Jeanne Sewell",
-        "rating": 5,
-        "body": "I actively take my granddaughter to the Dojo on the same parking lot every Wednesday and Thursday."
-    },
-    {
-        "name": "Chris Hofer",
-        "rating": 5,
-        "body": "Jeff and Cody are great people that will treat you right."
-    },
-    {
-        "name": "Lmn 8r",
-        "rating": 5,
-        "body": "Friendly and knowledgeable! Thanks guys!!"
-    },
-    {
-        "name": "George Miff",
-        "rating": 5,
-        "body": "Great service"
-    },
-    {
-        "name": "Juan Manuel Bonilla Rodriguez",
-        "rating": 5,
-        "body": "Very good quality of service and the staff is always very happy Translated by Google ・ See original (Spanish)"
-    },
-    {
-        "name": "Steven Sroczynski",
-        "rating": 5,
-        "body": "Positive Punctuality, Professionalism, Value… More"
-    },
-    {
-        "name": "Tracy Rammell",
-        "rating": 5,
-        "body": ""
-    },
-    {
-        "name": "Angela Larson",
-        "rating": 5,
-        "body": ""
-    },
-    {
-        "name": "NekroVon7thDivision",
-        "rating": 5,
-        "body": ""
-    },
-    {
-        "name": "Justin Wilson",
-        "rating": 5,
-        "body": ""
-    },
-    {
-        "name": "Danielle Poirier",
-        "rating": 4,
-        "body": "Jeff and Danielle are great people! Unfortunately the repairs for my ambulance camper were too expensive for me since the Frankenstein- engine build would require an engine pull to repair. but they were super helpful in trying to find other … More"
-    },
-    {
-        "name": "Donald Schmidt",
-        "rating": 4,
-        "body": "Jeff is a wonderful mechanic and a good man he is able to fabricate pieces that might be missing"
-    },
-    {
-        "name": "Brandie Wilson",
-        "rating": 3,
-        "body": ""
-    },
-    {
-        "name": "Bill Cannon",
-        "rating": 1,
-        "body": "Crooked, shady horrible mechanic! do not trust them! honestly i dont think he knows tje differencebetween gas and diesel engines. to consider him an idiot is a compliment."
-    },
-    {
-        "name": "Ford Karen",
-        "rating": 1,
-        "body": "horrible!!! so called mechanic is a complete idiot. do not recommend at all. CROOKS!"
-    }
-];
-
-        // ===== REVIEWS DISPLAY LOGIC =====
-        const reviewsPerPage = 6;
-        let currentPage = 0;
-
-        function renderReviews() {
-            const grid = document.getElementById('reviewsGrid');
-            const btn = document.getElementById('showMoreBtn');
-            const totalReviews = reviews.length;
-            const visibleCount = (currentPage + 1) * reviewsPerPage;
+            <!-- Square Payment SDK -->
+            <script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
             
-            grid.innerHTML = '';
-            
-            reviews.slice(0, visibleCount).forEach(review => {
-                const card = document.createElement('div');
-                card.className = 'review-card';
-                card.innerHTML = `
-                    <div class="review-header">
-                        <div class="reviewer-name">${review.name}</div>
-                        <div class="stars">${'★'.repeat(review.rating)}</div>
-                    </div>
-                    ${review.body ? `<div class="review-body">"${review.body}"</div>` : ''}
-                `;
-                grid.appendChild(card);
-            });
-            
-            if (visibleCount < totalReviews) {
-                const remaining = totalReviews - visibleCount;
-                btn.textContent = `Show ${remaining} More Review${remaining !== 1 ? 's' : ''} (Total ${totalReviews})`;
-                btn.classList.remove('hidden');
-            } else {
-                btn.classList.add('hidden');
+            <script>
+                // ===== REVIEWS DATA =====
+                // Add your reviews to this array. Each review should have: name, rating (1-5), and body (text or empty string "")
+                const reviews = [
+            {
+                "name": "Mark Ahlijanian",
+                "rating": 5,
+                "body": "Jeff and his team at Impact Auto are awesome. I own a small tree business and they are our only stop with fleet repairs. Jeff is extremely knowledgeable diesel engines and has fixed problems that other diesel mechanics have not been able to diagnose or fix properly. I highly recommend take your vehicles here!"
+            },
+            {
+                "name": "Rashid Mak",
+                "rating": 5,
+                "body": "Jeff listened attentively to my issue with my 2012 Volkswagen Touareg diesel and the cylinder six insufficient contribution code. He reassured me it might be a minor problem, suggested a few things to test, and was kind, professional, and … More"
+            },
+            {
+                "name": "Oliver Bradstreet",
+                "rating": 5,
+                "body": "They had outstanding service, Jeff solved a issue with my Duramax noone else could and was more than fair with me. Impact is my \"go to\" for my diesel. More"
+            },
+            {
+                "name": "Alice Dughi",
+                "rating": 5,
+                "body": "Jeff is a stand up human. Honest and cares about taking care of his clients. I am grateful that I got my ‘96 F250 and ‘98 Lance slide in camper in working order for living on the road at his shop. He was consistently patient and … More"
+            },
+            {
+                "name": "Fred Proby",
+                "rating": 5,
+                "body": "Jeff is one of those old-school mechanics who thoroughly diagnose the problem, rather than merely slap on a new part and hope it works. We were travelling back to Montana and limped into SLC with serious overheating problems on our 2005 … More"
+            },
+            {
+                "name": "Aaron Sattler",
+                "rating": 5,
+                "body": "Honest. Competent. Treats you like a human first. Was able to quickly diagnose and fix a problem for reasonable $ that the … More"
+            },
+            {
+                "name": "John Vande Merwe",
+                "rating": 5,
+                "body": "Jeff is the only mechanic I trust more than myself. Thanks again for breathing new life into my 7.3."
+            },
+            {
+                "name": "Bryant Rouse",
+                "rating": 5,
+                "body": "I appreciate Jeff and his guys getting my truck done in a timely manner. He replaced a turbo on my ram 2500. His communication was clear, professional and he is highly knowledgeable."
+            },
+            {
+                "name": "ivy johnson",
+                "rating": 5,
+                "body": "jeff gave amazing customer service! they were quick and efficient and will definitely be recommending to friends and family!"
+            },
+            {
+                "name": "Axel Corke",
+                "rating": 5,
+                "body": "Jeff is seriously the best. I got told I needed cam phasers. He gave me an awesome quote so I brought my truck to him. The second I pulled up he checked out and said it was my … More"
+            },
+            {
+                "name": "Steve Christensen",
+                "rating": 5,
+                "body": "We've been taking our 97 Dodge 2500 Cummins to Impact Auto for about a year now. As with any older truck, components/parts begin to fail. Jeff and Cody are top notch mechanics and go above and beyond to fix things right. Great guys. Great work. Go there!"
+            },
+            {
+                "name": "Janet Raineri",
+                "rating": 5,
+                "body": "Finding a seasoned, reliable honest down to earth mechanic now a days is far and few in between.I took my 1997 Betty the Buick Lasabre to Jeff at Impact she was riding rough, spurting … More"
+            },
+            {
+                "name": "Andrew Kelleher",
+                "rating": 5,
+                "body": "Jeff and his team were able to squeeze us in on a busy Tuesday to diagnose a vibration we were having at cruising speeds. … More"
+            },
+            {
+                "name": "Dowey Boy",
+                "rating": 5,
+                "body": "Took my Cummins 2500 diesel here. Got it fixed for an honest and affordable price. He didnt try to add any unnecessary charges like other repair shops to. Jeff is very knowledgeable about the dodge diesel truck. Honest shop. Will definitely take my truck back again."
+            },
+            {
+                "name": "Chad Mullins",
+                "rating": 5,
+                "body": "Great shop -- great people and reasonable. The catalytic converter was stolen on my motorhome. The only FORD truck dealer who will work on motorhomes was so backed up that they could not get to it for months. Jeff got the part overnighted from Denver and had me back on the road in 48 hours. More"
+            },
+            {
+                "name": "DANIELLE LEBLANC",
+                "rating": 5,
+                "body": "Jeff knows his stuff. It's amazing hearing his wisdom all day and learning by his side. We are running the best shop we can while staying small to provide you with better customer service than the big guys. Let us make an IMPACT on how you view auto repair! Come see us and let us get you rollin!"
+            },
+            {
+                "name": "Dude Dudeington",
+                "rating": 5,
+                "body": "I had the pleasure of showing Jeff how to change a tail light when he was in Jr. high. Little would I know he would become the amazing and knowledgeable mechanic he is today. Impact is one of the few last small shops that do things right the first time and go above and beyond to make sure your vehicle is repaired correctly."
+            },
+            {
+                "name": "Justin Beasley",
+                "rating": 5,
+                "body": "Jeff does a great job and knows his diesels well!"
+            },
+            {
+                "name": "Brandon Allen",
+                "rating": 5,
+                "body": "Jeff has an amazing eye and ear for detail. My vehicles run better now then they ever have. I am greatful I have found an honest mechanic in Jeff. Thanks!!"
+            },
+            {
+                "name": "Greg Biles",
+                "rating": 5,
+                "body": "My Chevy Duramax started leaking oil which at the rear main seal. We were staying at the KOA and only had one vehicle so we appreciate how accommodating they were with our urgency and schedules. I waited 3 months to write this review to … More"
+            },
+            {
+                "name": "Justin J",
+                "rating": 5,
+                "body": "I have a powerstroke 6.0 that's a difficult engine to diagnose problems. First mechanic I took it to couldn't figure out out the issue and I had gone through a bunch of diagnostic tests myself with no luck in figuring it out. They diagnosed … More"
+            },
+            {
+                "name": "Goodwin Mafia",
+                "rating": 5,
+                "body": "If your looking for a great shop Jeff at impact auto is the man, he is a very intelligent technician and makes sure you are completely satisfied with your repairs. He will go out of the way to help out anybody, I recommend him for all of your automotive repairs!!!"
+            },
+            {
+                "name": "Chris Ripplinger",
+                "rating": 5,
+                "body": "The two bad reviews are for a shop in Idaho. Jeff knows his stuff and they only charge $115/hr. whereas the other shops charge $135+. … More"
+            },
+            {
+                "name": "Jake Larson",
+                "rating": 5,
+                "body": "Jeff is a very knowledgeable mechanic. He is the only one I trust to work on my personal vehicles and work trucks. He is trustworthy and fair on prices."
+            },
+            {
+                "name": "G D Beckett",
+                "rating": 5,
+                "body": "These guys quickly diagnosed & fixed what my local shop could not. They know their stuff. If you are looking for a good diesel mechanic, look no further. They saved the first camping trip of spring for me. More"
+            },
+            {
+                "name": "Anthony Mutter",
+                "rating": 5,
+                "body": "I went here without notice on a Friday afternoon and the owner looked at my vehicle and told me a very low cost, nearly $400 less than the last bid I received. Then he had to wait for the part to come in and he went in on a Saturday when the shop is normally closed and fixed my vehicle. I strongly recommend this place to everyone!!!"
+            },
+            {
+                "name": "MillsLeds Wabbit LSX",
+                "rating": 5,
+                "body": "Best Mechanic in Salt Lake City best customer service in Utah no messing around or guessing what's wrong with the vehicle brought in my dodge ram 3500 with a lot of problem I'm am happy to say that I brought the truck here truck is running like it was brand new Jeff and Justin best of the best in Utah"
+            },
+            {
+                "name": "Anthony Hong",
+                "rating": 5,
+                "body": "Definitely a 5 star auto mechanic!! Thanks for saving the day Jeff! Impact Auto does great work and finding a fair diesel mechanic isn’t easy these days. Thanks again!!!"
+            },
+            {
+                "name": "cory peterson",
+                "rating": 5,
+                "body": "I've taken my truck to these guys for a bunch of different stuff from suspension to an engine replacement and they always crank it out with fast and quality work. 10/10 would recommend."
+            },
+            {
+                "name": "Andy P",
+                "rating": 5,
+                "body": "I've heard really good things about this shop and so far I'm impressed and appreciate their honesty and competitive prices. I won't be looking for a good mechanic for a while, I just found an entire shop full!"
+            },
+            {
+                "name": "Aleck Wright",
+                "rating": 5,
+                "body": "Guy running things is great. Really easy to talk to salt of the Earth kinda guy that helped me figure out an easy and inexpensive fix for the problem I had. More"
+            },
+            {
+                "name": "Carlo Sanchez",
+                "rating": 5,
+                "body": "ABSOLUTELY GREAT Service!! All othe places booked two weeks out and he will get things done in only a couole days, less cost, and Great workmanship!!"
+            },
+            {
+                "name": "John Ivester",
+                "rating": 5,
+                "body": "If you want it done right and you don’t want all sorts of other things added on go see impact auto. They’ve been doing good work at a fair price for decades."
+            },
+            {
+                "name": "Jeanne Sewell",
+                "rating": 5,
+                "body": "I actively take my granddaughter to the Dojo on the same parking lot every Wednesday and Thursday."
+            },
+            {
+                "name": "Chris Hofer",
+                "rating": 5,
+                "body": "Jeff and Cody are great people that will treat you right."
+            },
+            {
+                "name": "Lmn 8r",
+                "rating": 5,
+                "body": "Friendly and knowledgeable! Thanks guys!!"
+            },
+            {
+                "name": "George Miff",
+                "rating": 5,
+                "body": "Great service"
+            },
+            {
+                "name": "Juan Manuel Bonilla Rodriguez",
+                "rating": 5,
+                "body": "Very good quality of service and the staff is always very happy Translated by Google ・ See original (Spanish)"
+            },
+            {
+                "name": "Steven Sroczynski",
+                "rating": 5,
+                "body": "Positive Punctuality, Professionalism, Value… More"
+            },
+            {
+                "name": "Tracy Rammell",
+                "rating": 5,
+                "body": ""
+            },
+            {
+                "name": "Angela Larson",
+                "rating": 5,
+                "body": ""
+            },
+            {
+                "name": "NekroVon7thDivision",
+                "rating": 5,
+                "body": ""
+            },
+            {
+                "name": "Justin Wilson",
+                "rating": 5,
+                "body": ""
+            },
+            {
+                "name": "Danielle Poirier",
+                "rating": 4,
+                "body": "Jeff and Danielle are great people! Unfortunately the repairs for my ambulance camper were too expensive for me since the Frankenstein- engine build would require an engine pull to repair. but they were super helpful in trying to find other … More"
+            },
+            {
+                "name": "Donald Schmidt",
+                "rating": 4,
+                "body": "Jeff is a wonderful mechanic and a good man he is able to fabricate pieces that might be missing"
+            },
+            {
+                "name": "Brandie Wilson",
+                "rating": 3,
+                "body": ""
+            },
+            {
+                "name": "Bill Cannon",
+                "rating": 1,
+                "body": "Crooked, shady horrible mechanic! do not trust them! honestly i dont think he knows tje differencebetween gas and diesel engines. to consider him an idiot is a compliment."
+            },
+            {
+                "name": "Ford Karen",
+                "rating": 1,
+                "body": "horrible!!! so called mechanic is a complete idiot. do not recommend at all. CROOKS!"
             }
-        }
+        ];
 
-        document.getElementById('showMoreBtn').addEventListener('click', () => {
-            currentPage++;
-            renderReviews();
-        });
+                // ===== REVIEWS DISPLAY LOGIC =====
+                const reviewsPerPage = 6;
+                let currentPage = 0;
 
-        renderReviews();
-
-        // ===== CONTACT FORM =====
-        document.getElementById('contactForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                service: document.getElementById('service').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Show success message
-            document.getElementById('successMessage').classList.add('show');
-            document.getElementById('contactForm').reset();
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                document.getElementById('successMessage').classList.remove('show');
-            }, 5000);
-            
-            // Here you would typically send the form data to your backend/email service
-            console.log('Form submitted:', formData);
-        });
-
-        // ===== SMOOTH SCROLLING =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // ===== SQUARE PAYMENT INTEGRATION =====
-        // IMPORTANT: Replace 'YOUR_LOCATION_ID' with your actual Square location ID
-        // Get your location ID from: https://developer.squareup.com/apps
-        const SQUARE_LOCATION_ID = 'YOUR_LOCATION_ID';
-        
-        async function initializeSquarePayment() {
-            if (!window.Square) {
-                console.error('Square.js failed to load');
-                return;
-            }
-
-            try {
-                const payments = window.Square.payments('sandbox-sq0idb-YOUR_APPLICATION_ID', SQUARE_LOCATION_ID);
-                const card = await payments.card();
-                await card.attach('#card-container');
-
-                document.getElementById('card-button').addEventListener('click', async (event) => {
-                    event.preventDefault();
+                function renderReviews() {
+                    const grid = document.getElementById('reviewsGrid');
+                    const btn = document.getElementById('showMoreBtn');
+                    const totalReviews = reviews.length;
+                    const visibleCount = (currentPage + 1) * reviewsPerPage;
                     
-                    try {
-                        const result = await card.tokenize();
-                        if (result.status === 'OK') {
-                            console.log('Payment token:', result.token);
-                            // Send result.token to your server for processing
-                            alert('Payment token generated successfully! In production, this would process your payment.');
-                        } else {
-                            console.error('Tokenization failed:', result.errors);
-                            alert('Payment failed. Please check your card details.');
-                        }
-                    } catch (e) {
-                        console.error('Payment error:', e);
+                    grid.innerHTML = '';
+                    
+                    reviews.slice(0, visibleCount).forEach(review => {
+                        const card = document.createElement('div');
+                        card.className = 'review-card';
+                        card.innerHTML = `
+                            <div class="review-header">
+                                <div class="reviewer-name">${review.name}</div>
+                                <div class="stars">${'★'.repeat(review.rating)}</div>
+                            </div>
+                            ${review.body ? `<div class="review-body">"${review.body}"</div>` : ''}
+                        `;
+                        grid.appendChild(card);
+                    });
+                    
+                    if (visibleCount < totalReviews) {
+                        const remaining = totalReviews - visibleCount;
+                        btn.textContent = `Show ${remaining} More Review${remaining !== 1 ? 's' : ''} (Total ${totalReviews})`;
+                        btn.classList.remove('hidden');
+                    } else {
+                        btn.classList.add('hidden');
                     }
-                });
-            } catch (e) {
-                console.error('Square initialization error:', e);
-            }
-        }
-
-        // Initialize Square when page loads
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeSquarePayment);
-        } else {
-            initializeSquarePayment();
-        }
-
-        // ===== SCROLL ANIMATIONS =====
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
                 }
-            });
-        }, observerOptions);
 
-        document.querySelectorAll('.service-card, .review-card, .stat-box').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
-</body>
-</html>
+                document.getElementById('showMoreBtn').addEventListener('click', () => {
+                    currentPage++;
+                    renderReviews();
+                });
+
+                renderReviews();
+
+                // ===== CONTACT FORM =====
+                document.getElementById('contactForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        service: document.getElementById('service').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    // Show success message
+                    document.getElementById('successMessage').classList.add('show');
+                    document.getElementById('contactForm').reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('successMessage').classList.remove('show');
+                    }, 5000);
+                    
+                    // Here you would typically send the form data to your backend/email service
+                    console.log('Form submitted:', formData);
+                });
+
+                // ===== SMOOTH SCROLLING =====
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+
+                // ===== SQUARE PAYMENT INTEGRATION =====
+                // IMPORTANT: Replace 'YOUR_LOCATION_ID' with your actual Square location ID
+                // Get your location ID from: https://developer.squareup.com/apps
+                const SQUARE_LOCATION_ID = 'YOUR_LOCATION_ID';
+                
+                async function initializeSquarePayment() {
+                    if (!window.Square) {
+                        console.error('Square.js failed to load');
+                        return;
+                    }
+
+                    try {
+                        const payments = window.Square.payments('sandbox-sq0idb-YOUR_APPLICATION_ID', SQUARE_LOCATION_ID);
+                        const card = await payments.card();
+                        await card.attach('#card-container');
+
+                        document.getElementById('card-button').addEventListener('click', async (event) => {
+                            event.preventDefault();
+                            
+                            try {
+                                const result = await card.tokenize();
+                                if (result.status === 'OK') {
+                                    console.log('Payment token:', result.token);
+                                    // Send result.token to your server for processing
+                                    alert('Payment token generated successfully! In production, this would process your payment.');
+                                } else {
+                                    console.error('Tokenization failed:', result.errors);
+                                    alert('Payment failed. Please check your card details.');
+                                }
+                            } catch (e) {
+                                console.error('Payment error:', e);
+                            }
+                        });
+                    } catch (e) {
+                        console.error('Square initialization error:', e);
+                    }
+                }
+
+                // Initialize Square when page loads
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initializeSquarePayment);
+                } else {
+                    initializeSquarePayment();
+                }
+
+                // ===== SCROLL ANIMATIONS =====
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                }, observerOptions);
+
+                document.querySelectorAll('.service-card, .review-card, .stat-box').forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(20px)';
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    observer.observe(el);
+                });
+            </script>
+        </body>
+    </html>
