@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Auto And Diesel Glass | Professional Auto Glass Services in Millcreek, UT</title>
+    <meta name="description" content="Professional auto glass repair and replacement services in Millcreek, Utah. Expert service by Jeff and his team.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a4d8f;
+            --secondary-color: #2a5fa8;
+            --accent-color: #ff6b35;
+            --dark-bg: #0f1419;
+            --light-bg: #f8f9fa;
+            --text-dark: #1a1a1a;
+            --text-light: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header with Phone */
+        .top-bar {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            padding: 12px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .phone-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: color 0.3s;
+        }
+
+        .phone-link:hover {
+            color: var(--accent-color);
+        }
+
+        .phone-link i {
+            font-size: 1.3rem;
+        }
+
+        .hours-badge {
+            background: var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section - Full Screen */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            position: relative;
+            margin-top: 60px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('Impact-Auto-And-Diesel-Glass.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: var(--text-light);
+        }
+
+        .btn-primary:hover {
+            background: #e55a2a;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-light);
+            color: var(--primary-color);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 2rem;
+            color: var(--text-light);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Services Section */
+        .section {
+            padding: 80px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: var(--text-light);
+            padding: 40px 30px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--light-bg);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: var(--text-light);
+            padding: 30px;
+            text-align: center;
+            border: 2px solid var(--border-color);
+        }
+
+        .stat-box .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-box .label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Reviews Section */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .review-card {
+            background: var(--text-light);
+            padding: 30px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .review-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .reviewer-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+        }
+
+        .stars {
+            color: #ffa500;
+            font-size: 1.1rem;
+        }
+
+        .review-body {
+            color: #555;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .review-hidden {
+            display: none;
+        }
+
+        .show-more-btn {
+            display: block;
+            margin: 40px auto 0;
+            padding: 14px 40px;
+            background: var(--primary-color);
+            color: var(--text-light);
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .show-more-btn:hover {
+            background: var(--secondary-color);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .show-more-btn.hidden {
+            display: none;
+        }
+
+        /* Map Section */
+        .map-section {
+            background: var(--light-bg);
+        }
+
+        .map-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: start;
+        }
+
+        .map-embed {
+            width: 100%;
+            height: 450px;
+            border: 3px solid var(--border-color);
+        }
+
+        .location-info {
+            background: var(--text-light);
+            padding: 40px;
+            border: 2px solid var(--border-color);
+        }
+
+        .location-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 3px;
+        }
+
+        .info-item .details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .info-item .details p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+
+        .hours-list .day {
+            font-weight: 600;
+        }
+
+        .hours-list .time {
+            color: #666;
+        }
+
+        .directions-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Contact Form */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--text-light);
+        }
+
+        .contact-section .section-title {
+            color: var(--text-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-form {
+            background: var(--text-light);
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .contact-form h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid var(--border-color);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--accent-color);
+            color: var(--text-light);
+        }
+
+        .submit-btn:hover {
+            background: #e55a2a;
+        }
+
+        .contact-info-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .contact-info-box h3 {
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            margin-top: 3px;
+        }
+
+        .contact-item .details p {
+            line-height: 1.6;
+        }
+
+        /* Square Payment */
+        .payment-section {
+            text-align: center;
+        }
+
+        #payment-form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 40px;
+            background: var(--text-light);
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        #card-container {
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            padding: 60px 20px 30px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            border-radius: 4px;
+            font-size: 1.3rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                margin-top: 60px;
+            }
+
+            .top-bar-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .section {
+                padding: 60px 15px;
+            }
+
+            .map-embed {
+                height: 300px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Success Message */
+        .success-message {
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar with Phone -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <a href="tel:+13855493648" class="phone-link">
+                <i class="fas fa-phone"></i>
+                (385) 549-3648
+            </a>
+            <div class="hours-badge">
+                <i class="fas fa-clock"></i> Mon-Fri: 8 AM - 6 PM
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Impact Auto And Diesel Glass</h1>
+            <p>Professional Auto Glass Services in Millcreek, Utah</p>
+            <div class="cta-buttons">
+                <a href="tel:+13855493648" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>Windshield Replacement</h3>
+                <p>Expert windshield replacement for all vehicle makes and models with quality materials and precision installation.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Glass Repair</h3>
+                <p>Professional chip and crack repair services to restore your windshield's integrity and prevent further damage.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h3>Diesel Vehicles</h3>
+                <p>Specialized auto glass services for diesel trucks and heavy-duty vehicles with expert care and attention.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-window-maximize"></i>
+                <h3>Side Window Replacement</h3>
+                <p>Quick and professional replacement of side windows, door glass, and quarter panels for all vehicles.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-side"></i>
+                <h3>Back Glass Replacement</h3>
+                <p>Complete rear window replacement services with proper sealing and weatherproofing for lasting protection.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Insurance Claims</h3>
+                <p>We work directly with your insurance company to make the claims process smooth and hassle-free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <h2 class="section-title">About Impact Auto And Diesel Glass</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Your Trusted Auto Glass Experts</h3>
+                <p>Led by owner Jeff, Impact Auto And Diesel Glass has been serving the Millcreek community with professional auto glass services. We specialize in both standard vehicles and diesel trucks, providing comprehensive glass repair and replacement solutions.</p>
+                <p>Our commitment to quality workmanship, customer satisfaction, and competitive pricing has made us a trusted name in auto glass services throughout Utah. We use only premium materials and industry-leading techniques to ensure your vehicle's safety and integrity.</p>
+                <p>Whether you need a quick windshield repair or complete glass replacement, our experienced team is here to help with fast, reliable service you can count on.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number">5★</div>
+                    <div class="label">Customer Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">100%</div>
+                    <div class="label">Quality Guarantee</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">Fast</div>
+                    <div class="label">Service Time</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">Local</div>
+                    <div class="label">Family Owned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+        <button class="show-more-btn" id="showMoreBtn"></button>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section class="section map-section" id="location">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.7063877627575!2d-111.85388688805322!3d40.70246367127573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f454a15c09db%3A0x129f30802392c316!2sImpact%20Auto%20And%20Diesel!5e0!3m2!1sen!2sus!4v1761613249437!5m2!1sen!2sus" 
+                class="map-embed"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="location-info">
+                <h3>Location & Hours</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="details">
+                        <h4>Address</h4>
+                        <p>3161 Highland Dr.<br>Millcreek, UT 84106</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="details">
+                        <h4>Business Hours</h4>
+                        <ul class="hours-list">
+                            <li><span class="day">Monday</span><span class="time">8 AM - 6 PM</span></li>
+                            <li><span class="day">Tuesday</span><span class="time">8 AM - 6 PM</span></li>
+                            <li><span class="day">Wednesday</span><span class="time">8 AM - 6 PM</span></li>
+                            <li><span class="day">Thursday</span><span class="time">8 AM - 6 PM</span></li>
+                            <li><span class="day">Friday</span><span class="time">8 AM - 6 PM</span></li>
+                            <li><span class="day">Saturday</span><span class="time">Closed</span></li>
+                            <li><span class="day">Sunday</span><span class="time">Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="details">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+13855493648" style="color: var(--primary-color); font-weight: 600;">(385) 549-3648</a></p>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/place/Impact+Auto+And+Diesel/@40.7024637,-111.8538869,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f454a15c09db:0x129f30802392c316!8m2!3d40.7024637!4d-111.8513066!16s%2Fg%2F11bytsm1mg?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   class="btn btn-primary directions-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-section" id="contact">
+        <h2 class="section-title">Get A Free Quote</h2>
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully. We'll get back to you soon.
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="windshield-replacement">Windshield Replacement</option>
+                            <option value="windshield-repair">Windshield Repair</option>
+                            <option value="side-window">Side Window Replacement</option>
+                            <option value="back-glass">Back Glass Replacement</option>
+                            <option value="diesel-vehicle">Diesel Vehicle Service</option>
+                            <option value="insurance-claim">Insurance Claim</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Please describe your auto glass needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+            <div class="contact-info-box">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="details">
+                        <p><strong>Phone:</strong><br>
+                        <a href="tel:+13855493648">(385) 549-3648</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="details">
+                        <p><strong>Address:</strong><br>
+                        3161 Highland Dr.<br>
+                        Millcreek, UT 84106</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="details">
+                        <p><strong>Hours:</strong><br>
+                        Monday - Friday: 8 AM - 6 PM<br>
+                        Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="details">
+                        <p><strong>Insurance:</strong><br>
+                        We work with all major insurance companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section (Square) -->
+    <section class="section payment-section" id="payment">
+        <h2 class="section-title">Secure Payment</h2>
+        <div id="payment-form">
+            <h3 style="color: var(--primary-color); margin-bottom: 20px;">Pay Online</h3>
+            <div id="card-container"></div>
+            <button id="card-button" class="btn btn-primary" style="width: 100%;">Pay Now</button>
+        </div>
+        <p style="text-align: center; margin-top: 20px; color: #666;">
+            <i class="fas fa-lock"></i> Secure payment powered by Square
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Impact Auto And Diesel Glass</h3>
+                <p>Professional auto glass repair and replacement services for all vehicles in Millcreek, Utah.</p>
+                <p style="margin-top: 15px;"><strong>Owner:</strong> Jeff</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#reviews">Reviews</a></p>
+                <p><a href="#location">Location</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p>Windshield Replacement</p>
+                <p>Glass Repair</p>
+                <p>Side Window Replacement</p>
+                <p>Back Glass Replacement</p>
+                <p>Diesel Vehicles</p>
+                <p>Insurance Claims</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:+13855493648">(385) 549-3648</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 3161 Highland Dr., Millcreek, UT 84106</p>
+                <div class="social-links">
+                    <a href="https://www.google.com/maps/place/Impact+Auto+And+Diesel/@40.7024637,-111.8538869,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f454a15c09db:0x129f30802392c316!8m2!3d40.7024637!4d-111.8513066!16s%2Fg%2F11bytsm1mg?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a href="https://github.com/JamesBrownR/Impact-Auto-And-Diesel/new/main" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Impact Auto And Diesel Glass. All rights reserved. | Professional Auto Glass Services in Millcreek, UT</p>
+        </div>
+    </footer>
+
+    <!-- Square Payment SDK -->
+    <script src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+    
+    <script>
+        // ===== REVIEWS DATA =====
+        // Add your reviews to this array. Each review should have: name, rating (1-5), and body (text or empty string "")
+        const reviews = [
+            { name: "Customer 1", rating: 5, body: "" },
+            { name: "Customer 2", rating: 5, body: "" },
+            { name: "Customer 3", rating: 5, body: "" },
+            { name: "Customer 4", rating: 5, body: "" },
+            { name: "Customer 5", rating: 5, body: "" },
+            { name: "Customer 6", rating: 5, body: "" }
+        ];
+
+        // ===== REVIEWS DISPLAY LOGIC =====
+        const reviewsPerPage = 6;
+        let currentPage = 0;
+
+        function renderReviews() {
+            const grid = document.getElementById('reviewsGrid');
+            const btn = document.getElementById('showMoreBtn');
+            const totalReviews = reviews.length;
+            const visibleCount = (currentPage + 1) * reviewsPerPage;
+            
+            grid.innerHTML = '';
+            
+            reviews.slice(0, visibleCount).forEach(review => {
+                const card = document.createElement('div');
+                card.className = 'review-card';
+                card.innerHTML = `
+                    <div class="review-header">
+                        <div class="reviewer-name">${review.name}</div>
+                        <div class="stars">${'★'.repeat(review.rating)}</div>
+                    </div>
+                    ${review.body ? `<div class="review-body">"${review.body}"</div>` : ''}
+                `;
+                grid.appendChild(card);
+            });
+            
+            if (visibleCount < totalReviews) {
+                const remaining = totalReviews - visibleCount;
+                btn.textContent = `Show ${remaining} More Review${remaining !== 1 ? 's' : ''} (Total ${totalReviews})`;
+                btn.classList.remove('hidden');
+            } else {
+                btn.classList.add('hidden');
+            }
+        }
+
+        document.getElementById('showMoreBtn').addEventListener('click', () => {
+            currentPage++;
+            renderReviews();
+        });
+
+        renderReviews();
+
+        // ===== CONTACT FORM =====
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Show success message
+            document.getElementById('successMessage').classList.add('show');
+            document.getElementById('contactForm').reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('successMessage').classList.remove('show');
+            }, 5000);
+            
+            // Here you would typically send the form data to your backend/email service
+            console.log('Form submitted:', formData);
+        });
+
+        // ===== SMOOTH SCROLLING =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ===== SQUARE PAYMENT INTEGRATION =====
+        // IMPORTANT: Replace 'YOUR_LOCATION_ID' with your actual Square location ID
+        // Get your location ID from: https://developer.squareup.com/apps
+        const SQUARE_LOCATION_ID = 'YOUR_LOCATION_ID';
+        
+        async function initializeSquarePayment() {
+            if (!window.Square) {
+                console.error('Square.js failed to load');
+                return;
+            }
+
+            try {
+                const payments = window.Square.payments('sandbox-sq0idb-YOUR_APPLICATION_ID', SQUARE_LOCATION_ID);
+                const card = await payments.card();
+                await card.attach('#card-container');
+
+                document.getElementById('card-button').addEventListener('click', async (event) => {
+                    event.preventDefault();
+                    
+                    try {
+                        const result = await card.tokenize();
+                        if (result.status === 'OK') {
+                            console.log('Payment token:', result.token);
+                            // Send result.token to your server for processing
+                            alert('Payment token generated successfully! In production, this would process your payment.');
+                        } else {
+                            console.error('Tokenization failed:', result.errors);
+                            alert('Payment failed. Please check your card details.');
+                        }
+                    } catch (e) {
+                        console.error('Payment error:', e);
+                    }
+                });
+            } catch (e) {
+                console.error('Square initialization error:', e);
+            }
+        }
+
+        // Initialize Square when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeSquarePayment);
+        } else {
+            initializeSquarePayment();
+        }
+
+        // ===== SCROLL ANIMATIONS =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .review-card, .stat-box').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
